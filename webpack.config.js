@@ -5,7 +5,7 @@ const path = require("path");
 module.exports = {
     entry: "./app/index.js",
     module:{
-        rulse:[
+        rules:[
             {
                 test: /\.svg$/,
                 use: 'svg-inline-loader'
@@ -14,7 +14,7 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: ["style-loader", "css-loader"],
-            }, 
+            },   
 
             {
                 test: /\.(?:js|mjs|cjs)$/,
@@ -34,6 +34,6 @@ module.exports = {
         filename: "bundle.js"
     },
 
-    Plugins: [new HtmlWebpackPlugin()],
+    plugins: [new HtmlWebpackPlugin()],
     mode:"production"
 }

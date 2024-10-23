@@ -10,5 +10,3 @@ let greet2 ="test";
 console.log(greet2);
 
 var deadcod = "dead code";
-
- 
